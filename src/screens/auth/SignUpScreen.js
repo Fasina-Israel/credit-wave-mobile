@@ -159,6 +159,11 @@ const RegisterScreen = ({ navigation }) => {
           <Text style={styles.errorMessage}>{passwordError}</Text>
         )}
       </View>
+      <View>
+        <Text style={{ padding: 10, color: "#A7A7A7" }}>
+          By clicking continue, you agree to our Terms and condition
+        </Text>
+      </View>
       {disableButton ? (
         <Button
           mode="contained"
@@ -205,6 +210,7 @@ const styles = StyleSheet.create({
   subHeaderText: {
     fontSize: 14,
     color: "#A7A7A7",
+    // width: 200,
   },
   inputField: {
     position: "relative",
@@ -313,12 +319,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#155E56",
     justifyContent: "center",
     alignItems: "center",
+    borderRadius: 5,
   },
   disabledButton: {
     margin: 0,
     backgroundColor: "#E4ECFB",
     justifyContent: "center",
     alignItems: "center",
+    borderRadius: 5,
   },
   text: {
     textAlign: "center",
